@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      shelf_open_api_generator:
+        options:
+          include_routes_in: 'bin/sampleapi.dart'
+          info_title: 'Api'
+builders:
+  shelf_open_api_generator:
+    import: package:shelf_open_api_generator/shelf_open_api_generator.dart
+    builder_factories: [ 'buildOpenApi' ]
+    build_extensions: { 'bin/{{}}.open_api.dart': [ 'public/{{}}.open_api.yaml' ] }
+    auto_apply: root_package
+    build_to: source
