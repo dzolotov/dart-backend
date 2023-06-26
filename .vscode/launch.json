@@ -8,7 +8,7 @@
             "name": "sampleapi",
             "request": "launch",
             "type": "dart",
-            "program": "bin/sampleapi.dart"
+            "program": "bin/main.dart"
         }
     ]
 }
